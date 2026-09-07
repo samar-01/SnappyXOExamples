@@ -15,9 +15,7 @@ long duration, inches, cm;
 int randint;
 
 void setup() {
-	// Initialise motors (no inversion needed — hardware rewired to match
-	// library pins)
-	initMotors(false, false, false);
+	initMotors();
 
 	// Declare pinModes
 	pinMode(PIN_LED_GREEN, OUTPUT);

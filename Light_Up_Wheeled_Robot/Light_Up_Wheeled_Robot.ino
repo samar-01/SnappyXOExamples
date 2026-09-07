@@ -10,26 +10,28 @@ void setup() {
 	pinMode(PIN_LED_GREEN, OUTPUT);
 	pinMode(PIN_LED_RED, OUTPUT);
 
+	initMotors();
 	// Begin serial communication
 	Serial.begin(9600);
-
-	// Initialize motors
-	initMotors(false, false);
 }
 
 void loop() {
 	digitalWrite(PIN_LED_GREEN, HIGH);	// green for forward
+	Serial.println("Forward");
 	forward();
 	delay(1000);
 
 	digitalWrite(PIN_LED_GREEN, LOW);  // red for stoping
 	digitalWrite(PIN_LED_RED, HIGH);
+	Serial.println("Pause");
 	pause();
 	delay(1000);
 
 	digitalWrite(PIN_LED_RED, LOW);
+	Serial.println("Turn Left");
 	turnLeft();
 	delay(1000);
+	Serial.println("Turn Right");
 	turnRight();
 	delay(1000);
 

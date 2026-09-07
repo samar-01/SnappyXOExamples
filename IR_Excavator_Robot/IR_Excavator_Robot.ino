@@ -20,8 +20,7 @@ int angle = 0;
 int motorDelay = 70;
 
 void setup() {
-	// Initialize motors
-	initMotors(false, false, false);
+	initMotors();
 
 	// Begin serial communications and IR Reception
 	Serial.begin(9600);
