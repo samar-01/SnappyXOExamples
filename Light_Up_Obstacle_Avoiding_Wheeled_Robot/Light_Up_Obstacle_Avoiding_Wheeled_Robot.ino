@@ -4,8 +4,8 @@
 #include <SnappyXOShield.h>
 
 // Pin Definitions
-int PIN_LED_RED = 9;
-int PIN_LED_BLUE = 3;
+int PIN_LED_RED = 10;
+int PIN_LED_BLUE = 11;
 int PIN_LED_GREEN = 2;
 int trig = 13;	// attach pin 7 to Trig
 int echo = 12;	// attach pin 8 to Echo

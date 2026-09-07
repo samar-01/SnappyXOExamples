@@ -12,12 +12,16 @@ void setup() {
 
 // This is the main loop the code will follow
 void loop() {
+  Serial.println("Forward");
 	forward();
 	delay(1000);
+  Serial.println("Turn Right");
 	turnRight();
 	delay(1000);
+  Serial.println("Turn Left");
 	turnLeft();
 	delay(1000);
+  Serial.println("Reverse");
 	reverse();
 	delay(1000);
 }
